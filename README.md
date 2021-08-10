@@ -1,1 +1,1 @@
-# CDisplayEX-DiscordRichPresence
+# CDisplayEX-DiscordRichPresence!! :D
