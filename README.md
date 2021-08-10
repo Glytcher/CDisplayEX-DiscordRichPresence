@@ -1,1 +1,3 @@
-# CDisplayEX-DiscordRichPresence!! :D
+# CDisplayEX-DiscordRichPresence
+
+## Dependencies
