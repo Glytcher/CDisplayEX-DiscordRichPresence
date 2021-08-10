@@ -1,10 +1,3 @@
-# TODO list for v0.3
-# - Config JSON file ✔️
-# - Less hardcoding of stuff
-# - Combine and make some functions smaller
-# - Make findProcessIdByName() only return PID instead of filtering the lazy way with the current for loop trick
-# - Make closing the script easier ✔️
-# - Toggle option
 from pypresence import Presence
 import time, psutil, win32gui, win32process, time, json, os, sys
 
