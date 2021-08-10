@@ -14,3 +14,4 @@
 - [ ] Toggle option
 - [ ] Notifications
   - [ ] Windows toast
+- [ ] Add requirements.txt for easy installation of dependencies
