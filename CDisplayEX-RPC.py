@@ -67,7 +67,6 @@ clientID = config["clientID"]
 RPC = Presence(clientID)
 RPC.connect()
 
-buttons = [{"label": "Anilist - Manga List", "url": "https://anilist.co/user/Glytcher/mangalist"}]
 startTime = time.time()
 
 def main():
