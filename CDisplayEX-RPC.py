@@ -55,7 +55,7 @@ def getManga():
         for hwnd in getWindowHandle(getCdisplayID()):
             title = str(win32gui.GetWindowText(hwnd))
             title = title[:115] + (title[115:] and "...") # Discord RPC can't have more then 128 characters so we cut off at 50 and add ...
-            if title.lower() == "cdisplayex":
+            if title.lower() == "cdisplayex" or title == None:
                 return "Idling"
             return title
     else:
