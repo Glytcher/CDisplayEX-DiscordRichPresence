@@ -57,6 +57,9 @@ def getManga():
             title = title[:115] + (title[115:] and "...") # Discord RPC can't have more then 128 characters so we cut off at 50 and add ...
             if title.lower() == "cdisplayex" or title == None:
                 return "Idling"
+            if "+" in title.lower(): # When reading in double page mode, only show first page to make it look neater
+                title = title.split("+", 1)[0]
+                title = title.replace("[", " ", 1)
             return title
     else:
         print('No Cdisplayex process is running')
