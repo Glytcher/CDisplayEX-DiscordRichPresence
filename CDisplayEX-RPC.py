@@ -1,5 +1,5 @@
 from pypresence import Presence
-import time, psutil, win32gui, win32process, time, json, os, sys
+import time, psutil, win32gui, win32process, json, os, sys
 
 # Load in config
 me = os.path.dirname(os.path.abspath(__file__))     
@@ -54,12 +54,12 @@ def getManga():
     if isProcessRunning('Cdisplayex'):
         for hwnd in getWindowHandle(getCdisplayID()):
             title = str(win32gui.GetWindowText(hwnd))
-            title = title[:115] + (title[115:] and "...") # Discord RPC can't have more then 128 characters so we cut off at 50 and add ...
             if title.lower() == "cdisplayex" or title == None:
                 return "Idling"
             if "+" in title.lower(): # When reading in double page mode, only show first page to make it look neater
                 title = title.split("+", 1)[0]
                 title = title.replace("[", " ", 1)
+            title = title[:125] + (title[125:] and "...") # Discord RPC can't have more then 128 characters so we cut off at 50 and add ...
             return title
     else:
         print('No Cdisplayex process is running')
