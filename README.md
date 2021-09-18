@@ -54,8 +54,8 @@ This program works by getting the window title of CDdisplayEX, therefore your ma
 }
 ```
 
-- smallImageText is the text that will show when you hove the small AniList logo
-- closeTime is the time the script will stay active after CDisplayEX has been closed
+- smallImageText is the text that will show when you hover over the small AniList logo
+- closeTime is the time (in seconds) the script will stay active after CDisplayEX has been closed
 
 ## Todo
 
