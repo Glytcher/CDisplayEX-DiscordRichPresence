@@ -2,7 +2,9 @@
 
 Discord rich presence for the manga/comic reader CDdisplayEX. The script was made with manga in mind, but should work fine for comics too. The script will auto close when CDisplayEX has been closed after a set time. Also includes 2 buttons which can be configured with a config.
 
-![example](https://files.catbox.moe/gkgece.png)
+Profile view | Server view
+:-------------------------:|:-------------------------:
+![s](https://files.catbox.moe/gkgece.png)  |  ![s](https://files.catbox.moe/75tp5n.png)
 
 ## How does it work?
 
