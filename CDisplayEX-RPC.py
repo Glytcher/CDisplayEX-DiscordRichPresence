@@ -1,5 +1,5 @@
 from pypresence import Presence
-import time, psutil, win32gui, win32process, json, os, sys
+import time, json, os, sys, psutil, win32gui, win32process
 
 # Load in config
 me = os.path.dirname(os.path.abspath(__file__))     
