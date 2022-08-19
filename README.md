@@ -1,14 +1,14 @@
 # CDisplayEX Discord Rich Presence
 
-Discord rich presence for the manga/comic reader CDdisplayEX. The script was made with manga in mind, but should work fine for comics too. The script will auto close when CDisplayEX has been closed after a set time. Also includes 2 buttons which can be configured with a config.
+Discord rich presence for the manga/comic reader [CDisplayEX](https://www.cdisplayex.com/). The script was made with manga in mind, but should work fine for comics too. The script will auto close when CDisplayEX has been closed after a set time (Default 10 seconds). Also includes 2 buttons which can link to a site of your choosing. Both can be configured in a simple JSON config file.
 
 Profile view | Server view
 :-------------------------:|:-------------------------:
-![s](https://files.catbox.moe/gkgece.png)  |  ![s](https://files.catbox.moe/75tp5n.png)
+![Profile view](https://share.wildbook.me/ucONi0JvXZKnnQwT.png)  |  ![Server view](https://share.wildbook.me/wfjLdeLtlY8xhIbe.png)
 
 ## How does it work?
 
-This program works by getting the window title of CDdisplayEX, therefore your manga/comic needs to have proper naming.
+This program works by getting the window title of CDisplayEX, therefore your manga/comic needs to have proper naming.
 
 ## Dependencies
 
@@ -17,13 +17,13 @@ This program works by getting the window title of CDdisplayEX, therefore your ma
 
 ## Installation
 
-1. Download this repository
-2. Install the required packages using `pip install -r requirements.txt`
-3. In the same folder, create a config file named `config.json`
-4. Copy and paste everything from the template below in the `config.json` and modify it to your liking.
+1. Download/git clone this repository
+2. Install the required Python packages using `pip install -r requirements.txt`
+3. In the same folder, create a config JSON file named `config.json`
+4. Copy and paste everything from the config file template below in the `config.json` and modify it to your liking.
 5. Start the script with `python CDisplayEX-RPC.py`
 
-## Config file
+### Config file template
 
 ```json
 {
@@ -56,16 +56,12 @@ This program works by getting the window title of CDdisplayEX, therefore your ma
 }
 ```
 
-- smallImageText is the text that will show when you hover over the small AniList logo
+- smallImage can also be set to `mallogo`, to use the MyAnimeList logo instead
+- smallImageText is the text that will show when you hover over the small AniList/MAL logo
 - closeTime is the time (in seconds) the script will stay active after CDisplayEX has been closed
 
 ## Todo
 
-- [x] Config JSON file
-- [ ] Less hardcoding
-- [ ] Combine and make some functions smaller
 - [ ] Make findProcessIdByName() only return PID instead of filtering the lazy way with the current for loop trick
-- [x] Make closing the script easier
 - [ ] Toggle option
-- [ ] Notifications
-- [x] Add requirements.txt for easy installation of dependencies
+- [ ] Handle multiple CDisplayEX instances
